@@ -1,0 +1,62 @@
+/*                                      */
+/*        Virtual Toolbox Theme         */
+/*      Developed by Andrew Nolan       */
+/*                                      */
+
+/* General Classes */
+/* Move down content because we have a fixed navbar that is 3.5rem tall */
+body {
+    padding-top: 3.5rem;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+.navbar-brand {
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+.text-center {
+    text-align: center;
+}
+
+.page-section {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.navbar {
+    box-shadow: rgba(116, 129, 141, 0.1) 0px 3px 8px 0px;
+    border-bottom: 1px solid rgb(212, 218, 223);
+    background-color: rgb(255, 255, 255);
+}
+
+/* Jumbotron section */
+.jumbotron {
+    text-align: center;
+    background: url('../img/home-header.jpg') center center no-repeat, linear-gradient(rgba(23, 54, 112, 0.5),rgba(23, 54, 112, 0.5));
+    background-size: cover;
+    background-blend-mode: overlay;
+    color: #FFF;
+}
+.vertical-center {
+    min-height: 50%;  /* Fallback for browsers do NOT support vh unit */
+    min-height: 50vh; /* These two lines are counted as one :-)       */
+  
+    display: flex;
+    align-items: center;
+  }
+
+.jumbotron h1 {
+    font-weight: 900;
+}
+.jumbotron h2 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.jumbotron .btn {
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+
