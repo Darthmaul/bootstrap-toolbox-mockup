@@ -7,30 +7,58 @@
 /* Move down content because we have a fixed navbar that is 3.5rem tall */
 body {
     padding-top: 3.5rem;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Open Sans', sans-serif;
 }
 
 
 .navbar-brand {
-    font-family: 'IBM Plex Sans', sans-serif;
+    font-weight: 900;
 }
 
-h1, h2, h3, h4, h5, h6 {
-    font-family: 'IBM Plex Sans', sans-serif;
-}
 .text-center {
     text-align: center;
+    margin-bottom: 20px;
 }
-
-.page-section {
-    padding-top: 50px;
-    padding-bottom: 50px;
-}
-
 .navbar {
     box-shadow: rgba(116, 129, 141, 0.1) 0px 3px 8px 0px;
     border-bottom: 1px solid rgb(212, 218, 223);
     background-color: rgb(255, 255, 255);
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.navbar-nav {
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: bold;
+}
+.navbar-nav .btn {
+    font-size: 14px;
+    font-weight: bold;
+}
+footer {
+    padding-top: 20px;
+    padding-bottom: 10px;
+    margin-bottom: 0;
+    background: #3c3c3c;
+    color: #FFF;
+}
+
+
+/* Page sections */
+.page-section {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+/* Page Section -- MULTI-ROW */
+/* This would be for the top section in a multi-row section */
+.page-section-mr-t {
+    padding-top: 50px;
+    padding-bottom: 0px;
+}
+/* Corresponding bottom section here lads */
+.page-section-mr-b {
+    padding-top: 0px;
+    padding-bottom: 50px;
 }
 
 /* Jumbotron section */
@@ -40,6 +68,7 @@ h1, h2, h3, h4, h5, h6 {
     background-size: cover;
     background-blend-mode: overlay;
     color: #FFF;
+    margin-bottom: 0px;
 }
 .vertical-center {
     min-height: 50%;  /* Fallback for browsers do NOT support vh unit */
@@ -55,8 +84,33 @@ h1, h2, h3, h4, h5, h6 {
 .jumbotron h2 {
     margin-top: 20px;
     margin-bottom: 20px;
+    font-weight: 600;
 }
 .jumbotron .btn {
-    font-family: 'IBM Plex Sans', sans-serif;
+    text-transform: uppercase;
+    font-weight: 600;
 }
 
+/* Some colored page sections */
+.blue-section {
+    background: rgb(56,132,255);
+    background: linear-gradient(90deg, rgba(56,132,255,1) 35%, rgba(31,101,214,1) 100%);
+    color: #FFF;
+}
+.grey-section {
+    background: #f6f9fc;
+}
+
+/* Logos section -- Home */
+.greyed-out {
+    filter: grayscale(1);
+    -webkit-filter: grayscale(1);
+    opacity: .5;
+    transition: all .2s ease-in-out;
+    -webkit-transition: all .2s ease-in-out;
+}
+
+.greyed-out:hover {
+    filter: grayscale(0);
+    opacity: 1;
+}
