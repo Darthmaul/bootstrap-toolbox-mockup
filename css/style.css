@@ -78,13 +78,24 @@ footer {
     display: flex;
     align-items: center;
 }
+.inner-cat-heading {
+    margin-bottom: 0px;
+    min-height: 25%;  /* Fallback for browsers do NOT support vh unit */
+    min-height: 25vh; /* These two lines are counted as one :-)       */
+  
+    display: flex;
+    align-items: center;
+}
+.inner-cat-heading h2 {
+    font-size: 24px;
+}
 .vertical-center {
     min-height: 50%;  /* Fallback for browsers do NOT support vh unit */
     min-height: 50vh; /* These two lines are counted as one :-)       */
   
     display: flex;
     align-items: center;
-  }
+}
 
 .jumbotron h1 {
     font-weight: 900;
@@ -151,4 +162,39 @@ footer {
 }
 .category-box a:hover {
     text-decoration: none;
+}
+
+/* Sidebar Accordion */
+#sidebar {
+    padding-left: 0;
+    background: #f6f9fc;
+    padding-top: 20px;
+}
+.list-group-item {
+    border: 0;
+    background: #f6f9fc;
+}
+/* level 1*/
+#sidebar .list-group .collapse .list-group-item  {
+    padding-left: 40px;
+}
+
+/* level 2*/
+#sidebar .list-group .collapse > .collapse .list-group-item {
+    padding-left: 50px;
+}
+
+/* level 3*/
+#sidebar .list-group .collapse > .collapse > .collapse .list-group-item {
+    padding-left: 60px;
+}
+.active-list-item {
+    text-decoration: underline;
+    color: #333;
+}
+
+/* Lesson Body */
+.lesson-body {
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
