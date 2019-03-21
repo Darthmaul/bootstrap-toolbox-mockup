@@ -122,3 +122,33 @@ footer {
     filter: grayscale(0);
     opacity: 1;
 }
+
+/* Categories section */
+
+.category-box {
+    color: rgb(36, 42, 49);
+    margin: 32px 20px;
+    border: 1px solid rgb(230, 236, 241);
+    box-shadow: rgba(116, 129, 141, 0.1) 2px 1px 10px 1px;
+    background-color: rgb(255, 255, 255);
+    transition: all 250ms ease 0s;
+    text-align: center;
+    padding: 20px 10px;
+}
+
+.category-box:hover {
+    box-shadow: rgba(116, 129, 141, 0.3) 2px 1px 10px 1px;
+}
+
+.category-box i {
+    font-size: 35px;
+}
+
+.category-box h3 {
+    margin-top: 20px;
+    font-weight: bold;
+    font-size: 20px;
+}
+.category-box a:hover {
+    text-decoration: none;
+}
